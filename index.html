@@ -845,9 +845,8 @@
 				console.log('debug');
 			}
 
-			var txt = 'Corona Jawa Barat';
-			var txt = 'Positif : null';
-			var txt = 'Sembuh : null';
+			var txt = 'Corona';
+			var txt2 = 'txt';
 
 			function checkTime(i) {
 				if (i < 10) {
@@ -870,14 +869,47 @@
 				S=s;
 
 				if (H<5){
-					txt='Corona Jawa Barat';
-					txt='Positif : null' ;
-					txt='Sembuh : null' ;
+					txt='Have a Good Night:)';
 					if(txt != txt2 && !starting)
 						document.getElementById("quote").innerHTML = txt;
 					txt2=txt;
 				}
-				
+				else if(H<9){
+					txt='Good Morning You:)';
+					if(txt != txt2 && !starting)
+						document.getElementById("quote").innerHTML = txt;
+					txt2=txt;
+				}
+				else if(H<12){
+					txt='Be Happy Today:)';
+					if(txt != txt2 && !starting)
+						document.getElementById("quote").innerHTML = txt;
+					txt2=txt;
+				}
+				else if(H<16){
+					txt='Good Afternoon Dear:)';
+					if(txt != txt2 && !starting)
+						document.getElementById("quote").innerHTML = txt;
+					txt2=txt;
+				}
+				else if(H<19){
+					txt='Good Afternoon, Take a Rest:)';
+					if(txt != txt2 && !starting)
+						document.getElementById("quote").innerHTML = txt;
+					txt2=txt;
+				}
+				else if(H<23){
+					txt='Good Evening Sweetie:)';
+					if(txt != txt2 && !starting)
+						document.getElementById("quote").innerHTML = txt;
+					txt2=txt;
+				}
+				else if(H<=24){
+					txt='Time to Sleep, Good Night:)';
+					if(txt != txt2 && !starting)
+						document.getElementById("quote").innerHTML = txt;
+					txt2=txt;
+				}
 				starting=false;
 
 				if (auto && m==0 && s==0){
@@ -942,7 +974,7 @@
 
 			const quotes = [
 			  {
-			    "quote": "Jangan Lupa Sarapan <3",
+			    "quote": "Pakai Masker, Dirumah Aja, Stay Safe",
 			    "source": "Bagasnanda"
 			  },
 			  
